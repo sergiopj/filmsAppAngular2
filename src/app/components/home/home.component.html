@@ -1,0 +1,13 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Films App</h1>
+    <p class="lead">The best place to look for information about world cinema!</p>
+  </div>
+</div>
+<div class="container">
+  <br>
+  <app-slide [films]="inTheaters | slice:0:6" title="Films In Theaters"></app-slide><br><br>
+  <app-slide [films]="mostRated | slice:0:6" title="Most Rated"></app-slide><br><br>
+  <app-slide [films]="mostRatedKids | slice:0:6" title="Most Rated For Kids"></app-slide>
+
+</div>
